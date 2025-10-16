@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Buscador de Noticias</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="contenedor">
+    <section class="tarjeta">
+      <h1>Buscador de noticias</h1>
+
+      <form id="formulario" class="form-grid">
+        <label class="campo">
+          <span>Palabra clave</span>
+          <input id="palabra" type="text" placeholder="ej. viajar, divertirse" />
+        </label>
+
+        <label class="campo">
+          <span>Categoría</span>
+          <select id="categoria">
+            <option value="">— Cualquiera —</option>
+            <option value="business">Negocios</option>
+            <option value="entertainment">Entretenimiento</option>
+            <option value="environment">Medio ambiente</option>
+            <option value="food">Comida</option>
+            <option value="health">Salud</option>
+            <option value="politics">Política</option>
+            <option value="science">Ciencia</option>
+            <option value="sports">Deportes</option>
+            <option value="technology">Tecnología</option>
+            <option value="world">Mundo</option>
+          </select>
+        </label>
+
+        <label class="campo">
+          <span>Idioma</span>
+          <select id="idioma">
+            <option value="">— Cualquiera —</option>
+            <option value="es">Español</option>
+            <option value="en">Inglés</option>
+            <option value="fr">Francés</option>
+            <option value="pt">Portugués</option>
+          </select>
+        </label>
+
+        <label class="campo">
+          <span>País</span>
+          <select id="pais">
+            <option value="">— Opcional —</option>
+            <option value="mx">México</option>
+            <option value="es">España</option>
+            <option value="ar">Argentina</option>
+            <option value="co">Colombia</option>
+            <option value="us">Estados Unidos</option>
+          </select>
+        </label>
+
+        <button class="btn" type="submit">Buscar</button>
+      </form>
+    </section>
+
+    <p id="estado" class="estado" aria-live="polite"></p>
+    <section id="resultados" class="grid-resultados"></section>
+  </main>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
