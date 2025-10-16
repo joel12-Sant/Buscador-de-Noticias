@@ -13,7 +13,7 @@ html, body {
   margin: 0; 
   background: var(--fondo); 
   color: var(--texto); 
-  font-family: system-ui, -apple-system, Segoe UI, Inter, Roboto, Arial, sans-serif; 
+  font-family: Roboto, system-ui, -apple-system; 
 }
 
 .contenedor { max-width: 980px; margin: 32px auto; padding: 0 16px; }
@@ -50,14 +50,18 @@ input:focus, select:focus { border-color: var(--acento); box-shadow: 0 0 0 4px r
   grid-column: 1 / -1;
   padding: 12px 14px;
   border: 0;
-  border-radius: 10px;
+  border-radius: 16px;
   color: white;
   background: var(--acento);
   font-weight: 600;
   cursor: pointer;
 }
 
-.estado { min-height: 22px; margin: 14px 4px; color: var(--muted); }
+.estado { 
+  min-height: 22px; 
+  margin: 14px 4px; 
+  color: var(--muted); 
+}
 
 .grid-resultados {
   display: grid;
@@ -76,7 +80,10 @@ input:focus, select:focus { border-color: var(--acento); box-shadow: 0 0 0 4px r
   box-shadow: var(--sombra);
 }
 
-.noticia a { color: inherit; text-decoration: none; }
+.noticia a { 
+  color: inherit; 
+  text-decoration: none; 
+}
 .noticia .miniatura {
   display: block;
   width: 100%;

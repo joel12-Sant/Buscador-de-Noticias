@@ -68,6 +68,6 @@ formulario.addEventListener("submit", async (ev) => {
     estado.textContent = "";
   } catch (e) {
     console.error(e);
-    estado.textContent = "Error al cargar las noticias. Revisa tu API key o intenta de nuevo.";
+    estado.textContent = "Error al cargar las noticias";
   }
 });
