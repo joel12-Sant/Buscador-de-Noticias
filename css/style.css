@@ -1,5 +1,5 @@
 :root {
-  --fondo: #0f172a;
+  --fondo: #28334d;
   --panel: #0b1220;
   --borde: #334155;
   --texto: #e5e7eb;
@@ -9,7 +9,12 @@
 }
 
 * { box-sizing: border-box; }
-html, body { margin: 0; background: var(--fondo); color: var(--texto); font-family: system-ui, -apple-system, Segoe UI, Inter, Roboto, Arial, sans-serif; }
+html, body { 
+  margin: 0; 
+  background: var(--fondo); 
+  color: var(--texto); 
+  font-family: system-ui, -apple-system, Segoe UI, Inter, Roboto, Arial, sans-serif; 
+}
 
 .contenedor { max-width: 980px; margin: 32px auto; padding: 0 16px; }
 
@@ -47,7 +52,7 @@ input:focus, select:focus { border-color: var(--acento); box-shadow: 0 0 0 4px r
   border: 0;
   border-radius: 10px;
   color: white;
-  background: linear-gradient(90deg, var(--acento), #7c3aed);
+  background: var(--acento);
   font-weight: 600;
   cursor: pointer;
 }
